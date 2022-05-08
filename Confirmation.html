@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation page</title>
+    <meta name="author" content="Yazan Salameh">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+           }
+
+        .container {
+            background-color: cadetblue;
+            display: grid;
+            height: 100vh;
+
+
+            grid-template-areas:
+            "text"
+            "link";
+
+            background-color: #DAD2D8;
+            background-image: url('bg2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+
+        .grid-item {
+            border: 0px solid red;
+            font-size: 2em;
+            text-align: center;
+
+        }
+
+        .item1 {
+            grid-area: text;
+        }
+
+        .item2 {
+            grid-area: link;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="grid-item item1"><br><br><h2>The form was submitted successfully,
+            you will receive a message within 3 business days.</h2>
+        </div>
+
+        <div class="grid-item item2">
+
+            <a style="background-color: #199319; color: white; padding: 13px 18px; text-decoration: none;
+            font-size:45px;" href="index.html">Home</a>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <meta name="author" content="Yazan Salameh">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+           }
+
+        .container {
+            background-color: cadetblue;
+            display: grid;
+            height: 100vh;
+
+
+            grid-template-areas:
+            ". . . . . header . . . . ."
+            ". . . . . fname . . . . ."
+            ". . . . . lname . . . . ."
+            ". . . . . email . . . . ."
+            ". . . . . password . . . . ."
+            ". . . . . button . . . . .";
+
+            background-color: #DAD2D8;
+            background-image: url('bg2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+
+        }
+
+        .grid-item {
+            border: 0px solid red;
+            font-size: 2em;
+            text-align: center;
+
+        }
+
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: fname;
+        }
+
+        .item3 {
+            grid-area: lname;
+        }
+
+        .item4 {
+            grid-area: email;
+        }
+
+        .item5 {
+            grid-area: password;
+        }
+
+        .item6 {
+            grid-area: button;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<form action="index.html" method="post">
+    <div class="container">
+        <div class="grid-item item1"><h1><br>Sign Up</h1></div>
+
+        <div class="grid-item item2">
+            <label for="fname"></label>
+            <input type="text" style="font-size:12pt;height:50px;width:320px;" id="fname" name="fname" placeholder="First Name">
+        </div>
+
+        <div class="grid-item item3">
+            <label for="lname"></label>
+            <input type="text" style="font-size:12pt;height:50px;width:320px;" id="lname" name="lname" placeholder="Last Name">
+        </div>
+
+        <div class="grid-item item4">
+            <label for="email"></label>
+            <input type="email" style="font-size:12pt;height:50px;width:320px;" id="email" name="email" placeholder="Email address"></div>
+
+        <div class="grid-item item5">
+            <label for="password"></label>
+            <input type="password" style="font-size:12pt;height:50px;width:320px;" id="password" name="password" placeholder="Set Password">
+        </div>
+
+        <div class="grid-item item6"><button type="submit" style="font-size:25pt;height:50px;width:320px;">SIGN UP</button></div>
+    </div>
+
+</form>
+</body>
+
+</html>
